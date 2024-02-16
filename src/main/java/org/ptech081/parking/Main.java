@@ -36,22 +36,22 @@ public class Main {
         LocalTime horaFin = LocalTime.of(15, 30, 0);
 
 
-        List<registro> misRegistros = new ArrayList<registro>();
+        List<Registroo> misRegistros = new ArrayList<Registroo>();
         //Crear Registro
-        registro registro1 = new registro(fechaInicio, horaInicio, fechaFin, horaFin, 5000L, cupo1, cliente1.misCarros.get(0),cliente1, empleado1);
+        Registroo registro1 = new Registroo(fechaInicio, horaInicio, fechaFin, horaFin, 5000L, cupo1, cliente1.misCarros.get(0),cliente1, empleado1);
 
         LocalDate fechaInicio2 = LocalDate.now();
         LocalTime horaInicio2 = LocalTime.now();
         LocalDate fechaFin2 = LocalDate.of(2024, Month.DECEMBER, 29);
         LocalTime horaFin2 = LocalTime.of(12, 20, 0);
         
-        registro registro2 = new registro(fechaInicio2, horaInicio2, fechaFin2, horaFin2, 8000L, cupo2, cliente2.misCarros.get(1),cliente2, empleado2);
+        Registroo registro2 = new Registroo(fechaInicio2, horaInicio2, fechaFin2, horaFin2, 8000L, cupo2, cliente2.misCarros.get(1),cliente2, empleado2);
 
         //añadir el registro a la lista
         misRegistros.add(registro1);
         misRegistros.add(registro2);
         System.out.println("Registros de E/S Parking");
-        for(registro r : misRegistros ){
+        for(Registroo r : misRegistros ){
             System.out.println("Cliente " + r.cliente.nombre + " " + r.cliente.apellido + "|" + r.carro.placa + " " +  r.carro.tipoVehiculo + "|" + r.valor + "|" + r.fechaInicio + " " + r.horaInicio + "|" + r.empleado.nombre + " " + r.empleado.codigo + " ");
 
 

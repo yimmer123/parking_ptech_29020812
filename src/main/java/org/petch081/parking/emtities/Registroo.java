@@ -3,7 +3,7 @@ package org.petch081.parking.emtities;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class registro {
+public class Registroo {
 
 
     //
@@ -21,10 +21,10 @@ public class registro {
 
 
     //Constructor por defecto
-    public registro(){
+    public Registroo(){
     }
     //Contructor de todo
-    public registro(LocalDate fechaInicio, LocalTime horaInicio, LocalDate fechaFin, LocalTime horaFin, long valor, Cupoo cupo, Carro carro, Cliente cliente, Empleado empleado){
+    public Registroo(LocalDate fechaInicio, LocalTime horaInicio, LocalDate fechaFin, LocalTime horaFin, long valor, Cupoo cupo, Carro carro, Cliente cliente, Empleado empleado){
         this.fechaInicio = fechaInicio;
         this.horaInicio = horaInicio;
         this.fechaFin = fechaFin;
@@ -36,6 +36,3 @@ public class registro {
         this.empleado = empleado;
     }
     }
-    
-    
-
